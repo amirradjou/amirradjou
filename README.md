@@ -8,7 +8,7 @@ Go, Rust, Java and Python; MSc Computer Science (York University, 2025). I build
 
 ## Now (updated 2026-09-17)
 
-- Senior Full Stack Developer at CIBC (Toronto) since March 2026: service mesh on OpenShift (mTLS, traffic policy, observability) and gRPC APIs between microservices.
+- Senior Full Stack Developer at CIBC (Toronto) since March 2026.
 - Learning focus: Kubernetes (CKAD track) and agentic-AI systems — public lab repos will appear here as they ship.
 
 ## Highlights
