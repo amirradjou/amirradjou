@@ -4,7 +4,7 @@ Backend and distributed-systems engineer, Toronto (ON).
 
 Go, Rust, Java and Python; MSc Computer Science (York University, 2025). I build peer-to-peer databases, blockchain-consensus simulators and LLM-driven services.
 
-[amirradjou.com](https://amirradjou.com) | [LinkedIn](https://www.linkedin.com/in/amirreza-radjou/) | [CV (PDF, June 2026)](https://amirradjou.com/CV.pdf) | amirreza.radjou@gmail.com
+[amirradjou.com](https://amirradjou.com) | [LinkedIn](https://www.linkedin.com/in/amirreza-radjou/) | [CV (PDF, September 2026)](https://amirradjou.com/CV.pdf) | amirreza.radjou@gmail.com
 
 ## Now (updated 2026-09-17)
 
@@ -21,7 +21,7 @@ Go, Rust, Java and Python; MSc Computer Science (York University, 2025). I build
 
 | When | Where | What |
 |---|---|---|
-| Mar 2026 - present | CIBC, Toronto | Senior Full Stack Developer: service mesh on OpenShift, gRPC inter-service APIs, Enterprise Product Catalog onboarding (incl. Simplii Financial). |
+| Mar 2026 - present | CIBC, Toronto | Senior Full Stack Developer: MCBR rewrite in Go (microservices, batch jobs, SOAP compatibility adapters, Azure Blob Storage), Helm/Istio delivery on OpenShift, service mesh, gRPC/protobuf contracts, Enterprise Product Catalog onboarding (incl. Simplii Financial). |
 | May 2024 - Mar 2025 | Dandelion Network (remote) | Software Engineer: Go/Python wallet backend (REST, GraphQL, gRPC), led the network-simulator team, Substrate/Ink! (Rust) multisig and vault contracts on Polkadot. |
 | Sep 2022 - May 2025 | York University | Research Assistant - Software Engineer: CNSim Bitcoin and Tangle protocols, finality metric, JUnit harnesses, Python post-processing and visualisation GUI. |
 
@@ -49,10 +49,10 @@ Go, Rust, Java and Python; MSc Computer Science (York University, 2025). I build
 | Area | Tools |
 |---|---|
 | Languages | Go, Python, TypeScript, JavaScript, Java, Rust, SQL |
-| Backend and APIs | gRPC, REST, GraphQL, Django, Flask |
+| Backend and APIs | gRPC, Protocol Buffers (buf), REST, GraphQL, Django, Flask |
 | Distributed systems | Microservices, service mesh, peer-to-peer (IPFS/libp2p), consensus and blockchain protocols (Substrate/Polkadot), discrete-event simulation |
-| DevOps and platforms | Docker, Docker Compose, Kubernetes, OpenShift, Jenkins, GitHub Actions, Netlify |
-| Data | PostgreSQL, SQLite, ETL/ELT pipelines |
+| DevOps and platforms | Docker, Docker Compose, Kubernetes, OpenShift, Helm, Istio, Jenkins, GitHub Actions, Azure, Netlify |
+| Data | PostgreSQL, SQLite, Azure Blob Storage, ETL/ELT pipelines |
 | Testing and security | JUnit, pytest, Cypress; API security and mTLS, threat modelling, cryptography |
 | AI | LLM agent pipelines (Gemini, OpenAI/LangChain) |
 
