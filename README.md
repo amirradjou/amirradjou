@@ -38,7 +38,7 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=go,py,ts,java,rust,postgres,kubernetes,docker,githubactions,react,linux&theme=dark">
-    <img src="https://skillicons.dev/icons?i=go,py,ts,java,rust,postgres,kubernetes,docker,githubactions,react,linux&theme=light" alt="Go, Python, TypeScript, Java, Rust, PostgreSQL, Kubernetes, Docker, GitHub Actions, React, Linux">
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=go%2Cpy%2Cts%2Cjava%2Crust%2Cpostgres%2Ckubernetes%2Cdocker%2Cgithubactions%2Creact%2Clinux&theme=dark">
+    <img src="https://skillicons.dev/icons?i=go%2Cpy%2Cts%2Cjava%2Crust%2Cpostgres%2Ckubernetes%2Cdocker%2Cgithubactions%2Creact%2Clinux&theme=light" alt="Go, Python, TypeScript, Java, Rust, PostgreSQL, Kubernetes, Docker, GitHub Actions, React, Linux">
   </picture>
 </p>
