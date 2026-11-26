@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 672" width="1600" height="672" role="img" aria-labelledby="t">
-<title id="t">Project status measured 2026-11-26 15:49 UTC: go-orbitdb: last commit 9 days ago, CI success; CNSim: last commit 27 days ago, CI success; leash: last commit 8 days ago, CI success; pennywatch: last commit 9 days ago, CI success; llm-honeypot: last commit 8 days ago, CI success; exitcheck: last commit 8 days ago, CI success; poker-table: last commit 18 days ago, CI success; overhead: last commit 19 days ago, CI success; chess-coach: last commit 20 days ago, CI success</title>
+<title id="t">Project status measured 2026-11-26 17:48 UTC: go-orbitdb: last commit 9 days ago, CI success; CNSim: last commit 28 days ago, CI success; leash: last commit 8 days ago, CI success; pennywatch: last commit 9 days ago, CI success; llm-honeypot: last commit 8 days ago, CI success; exitcheck: last commit 8 days ago, CI success; poker-table: last commit 18 days ago, CI success; overhead: last commit 19 days ago, CI success; chess-coach: last commit 20 days ago, CI success</title>
 <style>
 text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 25px; fill: #f4f7fb; }
 .head { fill: #b9c9e4; font-size: 20px; letter-spacing: .08em; }
@@ -15,7 +15,7 @@ text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "L
 <rect width="1600" height="672" rx="22" fill="#0b2350"/>
 <circle class="pulse" cx="52" cy="52" r="9" fill="#f5b731"/>
 <text class="title" x="76" y="61">$ watch amirradjou</text>
-<text class="soft" x="1560" y="61" text-anchor="end">measured 2026-11-26 15:49 UTC from a local machine</text>
+<text class="soft" x="1560" y="61" text-anchor="end">measured 2026-11-26 17:48 UTC from a local machine</text>
 <text class="head" x="40" y="110">PEER</text>
 <text class="head" x="330" y="110">LAST COMMIT</text>
 <text class="head" x="580" y="110">CI</text>
@@ -30,7 +30,7 @@ text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "L
 <text class="soft" x="940" y="162">v0.1.0</text>
 <text class="soft" x="1130" y="162">—</text>
 <text x="40" y="212">CNSim</text>
-<text class="soft" x="330" y="212">27 days ago</text>
+<text class="soft" x="330" y="212">28 days ago</text>
 <text class="ok" x="580" y="212">passing</text>
 <text class="soft" x="720" y="212">72</text>
 <text class="soft" x="940" y="212">—</text>
@@ -64,13 +64,13 @@ text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "L
 <text class="ok" x="580" y="462">passing</text>
 <text class="soft" x="720" y="462">124</text>
 <text class="soft" x="940" y="462">v0.2.0</text>
-<text class="live" x="1130" y="462">200 in 18 ms</text>
+<text class="live" x="1130" y="462">200 in 19 ms</text>
 <text x="40" y="512">overhead</text>
 <text class="soft" x="330" y="512">19 days ago</text>
 <text class="ok" x="580" y="512">passing</text>
 <text class="soft" x="720" y="512">109</text>
 <text class="soft" x="940" y="512">—</text>
-<text class="live" x="1130" y="512">200 in 87 ms</text>
+<text class="live" x="1130" y="512">200 in 69 ms</text>
 <text x="40" y="562">chess-coach</text>
 <text class="soft" x="330" y="562">20 days ago</text>
 <text class="ok" x="580" y="562">passing</text>
@@ -79,5 +79,5 @@ text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "L
 <text class="soft" x="1130" y="562">—</text>
 <text x="40" y="612">amirradjou.com</text>
 <text class="soft" x="330" y="612">website</text>
-<text class="live" x="1130" y="612">200 in 112 ms</text>
+<text class="live" x="1130" y="612">200 in 109 ms</text>
 </svg>

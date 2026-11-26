@@ -38,6 +38,21 @@ More at **[amirradjou.com](https://amirradjou.com)**, in my [CV](https://amirrad
   <a href="https://github.com/amirradjou/chess-coach"><img src="assets/cards/chess-coach.svg" alt="chess-coach: Stockfish finds the mistakes you keep making, and the coach drills you on those exact positions." width="49%"></a>
 </p>
 
+<details>
+<summary>The projects as text</summary>
+
+- **[go-orbitdb](https://github.com/orbitdb/go-orbitdb)**: The Go port of OrbitDB, the peer-to-peer database on IPFS, byte-for-byte compatible with the JavaScript version. I wrote 231 of its 247 commits.
+- **[CNSim](https://github.com/amirradjou/cnsim)**: A blockchain network simulator, extended to measure how final a Bitcoin transaction is, including under attack.
+- **[leash](https://github.com/amirradjou/leash)**: An on-chain policy, not the prompt, decides what the agent can spend. $0 lost in 110 attack runs; unguarded, $15,333 in 27 of 110.
+- **[pennywatch](https://github.com/amirradjou/pennywatch)**: The same circuits on every build of PennyLane, Lightning and Catalyst, each change traced to its pull request. Import grew 74% in 0.43; traced to one line. [Live page](https://amirradjou.github.io/pennywatch/).
+- **[llm-honeypot](https://github.com/amirradjou/llm-honeypot)**: Lets any bot log in, answers with a convincing fake Ubuntu shell, and records everything it tries. 59 of 65 unseen bot lines answered like Ubuntu 22.04.
+- **[exitcheck](https://github.com/amirradjou/exitcheck)**: Reads Ethereum and Base token contracts and simulates a buy and a sell on a fork of the chain. 6 of 6 honeypot tokens flagged, 0 of 10 legitimate.
+- **[poker-table](https://github.com/amirradjou/poker-table)**: Language models, scripted bots and you at one table, with replays, leagues and coaching. Two model personalities, 100 hands: nobody clears break-even. [Live page](https://amirradjou.github.io/poker-table/).
+- **[overhead](https://github.com/amirradjou/overhead)**: The planes you can see from your window, drawn where you would see them, from free flight-tracking feeds. [Live page](https://overhead-window.netlify.app).
+- **[chess-coach](https://github.com/amirradjou/chess-coach)**: Stockfish finds the mistakes you keep making, and the coach drills you on those exact positions.
+
+</details>
+
 <sub>Also here: <a href="https://github.com/amirradjou/esm-famil">esm-famil</a> (an online version of the Persian word game),
 <a href="https://github.com/amirradjou/amirradjou-site">amirradjou-site</a> and its <a href="https://github.com/amirradjou/terminal-portfolio">terminal version</a>,
 <a href="https://github.com/amirradjou/dnd-game-master">dnd-game-master</a>, <a href="https://github.com/amirradjou/task-manager">task-manager</a>,

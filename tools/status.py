@@ -34,10 +34,10 @@ def api(path: str):
     try:
         with urllib.request.urlopen(req, timeout=20) as res:
             return json.load(res)
-    except urllib.error.HTTPError as err:
-        if err.code == 404:
-            return None
-        raise
+    except Exception as err:  # noqa: BLE001 - one failed call blanks its cell, never the whole strip
+        if not (isinstance(err, urllib.error.HTTPError) and err.code == 404):
+            print(f"warning: {path}: {err}")
+        return None
 
 
 def ago(iso: str) -> str:
@@ -66,12 +66,14 @@ def repo_row(project: dict) -> dict:
     }
 
 
-def recent_commits(repo: str, branch: str) -> int:
-    """Commits on the default branch in the last 90 days."""
+def recent_commits(repo: str, branch: str) -> int | str:
+    """Commits on the default branch in the last 90 days ("—" if the API didn't answer)."""
     since = datetime.fromtimestamp(NOW.timestamp() - 90 * 86400, timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     total, page = 0, 1
     while True:
-        batch = api(f"repos/{repo}/commits?sha={branch}&since={since}&per_page=100&page={page}") or []
+        batch = api(f"repos/{repo}/commits?sha={branch}&since={since}&per_page=100&page={page}")
+        if batch is None:
+            return "—" if total == 0 else total
         total += len(batch)
         if len(batch) < 100:
             return total
