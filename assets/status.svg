@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 672" width="1600" height="672" role="img" aria-labelledby="t">
+<title id="t">Project status measured 2026-11-26 15:49 UTC: go-orbitdb: last commit 9 days ago, CI success; CNSim: last commit 27 days ago, CI success; leash: last commit 8 days ago, CI success; pennywatch: last commit 9 days ago, CI success; llm-honeypot: last commit 8 days ago, CI success; exitcheck: last commit 8 days ago, CI success; poker-table: last commit 18 days ago, CI success; overhead: last commit 19 days ago, CI success; chess-coach: last commit 20 days ago, CI success</title>
+<style>
+text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 25px; fill: #f4f7fb; }
+.head { fill: #b9c9e4; font-size: 20px; letter-spacing: .08em; }
+.soft { fill: #b9c9e4; }
+.ok { fill: #8be0a4; }
+.bad { fill: #ff8f7a; }
+.live { fill: #f5b731; }
+.title { font-size: 27px; font-weight: 700; }
+.pulse { animation: pulse 2s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: .25; } }
+@media (prefers-reduced-motion: reduce) { .pulse { animation: none; } }
+</style>
+<rect width="1600" height="672" rx="22" fill="#0b2350"/>
+<circle class="pulse" cx="52" cy="52" r="9" fill="#f5b731"/>
+<text class="title" x="76" y="61">$ watch amirradjou</text>
+<text class="soft" x="1560" y="61" text-anchor="end">measured 2026-11-26 15:49 UTC from a local machine</text>
+<text class="head" x="40" y="110">PEER</text>
+<text class="head" x="330" y="110">LAST COMMIT</text>
+<text class="head" x="580" y="110">CI</text>
+<text class="head" x="720" y="110">COMMITS 90D</text>
+<text class="head" x="940" y="110">RELEASE</text>
+<text class="head" x="1130" y="110">LIVE PAGE</text>
+<line x1="40" y1="124" x2="1560" y2="124" stroke="#b9c9e4" stroke-opacity=".3"/>
+<text x="40" y="162">go-orbitdb</text>
+<text class="soft" x="330" y="162">9 days ago</text>
+<text class="ok" x="580" y="162">passing</text>
+<text class="soft" x="720" y="162">46</text>
+<text class="soft" x="940" y="162">v0.1.0</text>
+<text class="soft" x="1130" y="162">—</text>
+<text x="40" y="212">CNSim</text>
+<text class="soft" x="330" y="212">27 days ago</text>
+<text class="ok" x="580" y="212">passing</text>
+<text class="soft" x="720" y="212">72</text>
+<text class="soft" x="940" y="212">—</text>
+<text class="soft" x="1130" y="212">—</text>
+<text x="40" y="262">leash</text>
+<text class="soft" x="330" y="262">8 days ago</text>
+<text class="ok" x="580" y="262">passing</text>
+<text class="soft" x="720" y="262">19</text>
+<text class="soft" x="940" y="262">—</text>
+<text class="soft" x="1130" y="262">—</text>
+<text x="40" y="312">pennywatch</text>
+<text class="soft" x="330" y="312">9 days ago</text>
+<text class="ok" x="580" y="312">passing</text>
+<text class="soft" x="720" y="312">68</text>
+<text class="soft" x="940" y="312">—</text>
+<text class="live" x="1130" y="312">200 in 18 ms</text>
+<text x="40" y="362">llm-honeypot</text>
+<text class="soft" x="330" y="362">8 days ago</text>
+<text class="ok" x="580" y="362">passing</text>
+<text class="soft" x="720" y="362">68</text>
+<text class="soft" x="940" y="362">—</text>
+<text class="soft" x="1130" y="362">—</text>
+<text x="40" y="412">exitcheck</text>
+<text class="soft" x="330" y="412">8 days ago</text>
+<text class="ok" x="580" y="412">passing</text>
+<text class="soft" x="720" y="412">71</text>
+<text class="soft" x="940" y="412">—</text>
+<text class="soft" x="1130" y="412">—</text>
+<text x="40" y="462">poker-table</text>
+<text class="soft" x="330" y="462">18 days ago</text>
+<text class="ok" x="580" y="462">passing</text>
+<text class="soft" x="720" y="462">124</text>
+<text class="soft" x="940" y="462">v0.2.0</text>
+<text class="live" x="1130" y="462">200 in 18 ms</text>
+<text x="40" y="512">overhead</text>
+<text class="soft" x="330" y="512">19 days ago</text>
+<text class="ok" x="580" y="512">passing</text>
+<text class="soft" x="720" y="512">109</text>
+<text class="soft" x="940" y="512">—</text>
+<text class="live" x="1130" y="512">200 in 87 ms</text>
+<text x="40" y="562">chess-coach</text>
+<text class="soft" x="330" y="562">20 days ago</text>
+<text class="ok" x="580" y="562">passing</text>
+<text class="soft" x="720" y="562">192</text>
+<text class="soft" x="940" y="562">—</text>
+<text class="soft" x="1130" y="562">—</text>
+<text x="40" y="612">amirradjou.com</text>
+<text class="soft" x="330" y="612">website</text>
+<text class="live" x="1130" y="612">200 in 112 ms</text>
+</svg>

@@ -1,0 +1,30 @@
+# Once a day: measure every project (last commit, 90-day commits, CI, release, live page) and commit
+# assets/status.svg if anything changed.
+name: status
+
+on:
+  schedule:
+    - cron: "37 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Measure
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 tools/status.py
+
+      - name: Commit if changed
+        run: |
+          bash tools/ci/commit.sh "status: $(date -u +%Y-%m-%d)" assets/status.svg

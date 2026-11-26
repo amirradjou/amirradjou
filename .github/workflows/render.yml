@@ -1,0 +1,33 @@
+# The images are generated. When the generators, the data or peers.json change on main, rebuild them
+# here, so pull requests only ever change tools/ and never conflict over the images.
+name: render
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/**"
+      - "peers.json"
+      - "assets/projects/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - uses: astral-sh/setup-uv@1db35dd8eee11c5894872e0b383ae6c406cf738d # v10.4.0
+
+      - name: Build the banner, button and cards
+        run: uv run --with-requirements tools/requirements.txt python tools/build_assets.py
+
+      - name: Commit if changed
+        run: |
+          bash tools/ci/commit.sh "render: rebuild the README images" assets/banner.svg assets/ping.svg assets/cards
