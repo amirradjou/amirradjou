@@ -101,7 +101,7 @@ def probe(url: str) -> str:
 def render(rows: list[dict], sites: list[tuple[str, str]]) -> str:
     w, row_h, top = 1600, 50, 132
     h = top + row_h * (len(rows) + len(sites)) + 40
-    cols = [("PEER", 40), ("LAST COMMIT", 330), ("CI", 590), ("COMMITS 90D", 760), ("RELEASE", 900), ("LIVE PAGE", 1120)]
+    cols = [("PEER", 40), ("LAST COMMIT", 330), ("CI", 580), ("COMMITS 90D", 720), ("RELEASE", 940), ("LIVE PAGE", 1130)]
     stamp = NOW.strftime("%Y-%m-%d %H:%M UTC")
     where = "a GitHub runner" if os.environ.get("GITHUB_ACTIONS") == "true" else "a local machine"
     o = [
@@ -138,17 +138,17 @@ text {{ font-family: {MONO}; font-size: 25px; fill: {PAPER}; }}
         o += [
             f'<text x="40" y="{y}">{escape(r["name"])}</text>',
             f'<text class="soft" x="330" y="{y}">{escape(r["commit"])}</text>',
-            f'<text class="{ci_class}" x="590" y="{y}">{escape(ci_text)}</text>',
-            f'<text class="soft" x="760" y="{y}">{r["recent"]}</text>',
-            f'<text class="soft" x="900" y="{y}">{escape(r["release"])}</text>',
-            f'<text class="{live_class}" x="1120" y="{y}">{escape(live)}</text>',
+            f'<text class="{ci_class}" x="580" y="{y}">{escape(ci_text)}</text>',
+            f'<text class="soft" x="720" y="{y}">{r["recent"]}</text>',
+            f'<text class="soft" x="940" y="{y}">{escape(r["release"])}</text>',
+            f'<text class="{live_class}" x="1130" y="{y}">{escape(live)}</text>',
         ]
         y += row_h
     for name, result in sites:
         o += [
             f'<text x="40" y="{y}">{escape(name)}</text>',
             f'<text class="soft" x="330" y="{y}">website</text>',
-            f'<text class="{"live" if result.startswith("200") else "bad"}" x="1120" y="{y}">{escape(result)}</text>',
+            f'<text class="{"live" if result.startswith("200") else "bad"}" x="1130" y="{y}">{escape(result)}</text>',
         ]
         y += row_h
     o.append("</svg>")
