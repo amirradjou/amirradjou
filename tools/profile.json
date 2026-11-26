@@ -1,0 +1,94 @@
+{
+  "_comment": "Cards and status checks for README.md. Every sentence and number comes from the project's README (checked 2026-11-25). Pictures are the projects' own, in assets/projects.",
+  "projects": [
+    {
+      "id": "go-orbitdb",
+      "url": "https://github.com/orbitdb/go-orbitdb",
+      "repo": "orbitdb/go-orbitdb",
+      "kind": "Open source, OrbitDB",
+      "line": "The Go port of OrbitDB, the peer-to-peer database on IPFS, byte-for-byte compatible with the JavaScript version.",
+      "fact": "I wrote 231 of its 247 commits.",
+      "picture": "go-orbitdb.webp"
+    },
+    {
+      "id": "CNSim",
+      "url": "https://github.com/amirradjou/cnsim",
+      "repo": "amirradjou/cnsim",
+      "kind": "M.Sc. thesis, York University",
+      "line": "A blockchain network simulator, extended to measure how final a Bitcoin transaction is, including under attack.",
+      "panel": "How final is a Bitcoin transaction?"
+    },
+    {
+      "id": "leash",
+      "url": "https://github.com/amirradjou/leash",
+      "repo": "amirradjou/leash",
+      "kind": "Smart-account wallet for LLM agents",
+      "line": "An on-chain policy, not the prompt, decides what the agent can spend.",
+      "fact": "$0 lost in 110 attack runs; unguarded, $15,333 in 27 of 110.",
+      "picture": "leash.webp",
+      "fit": "meet"
+    },
+    {
+      "id": "pennywatch",
+      "url": "https://github.com/amirradjou/pennywatch",
+      "repo": "amirradjou/pennywatch",
+      "live": "https://amirradjou.github.io/pennywatch/",
+      "kind": "Performance history of PennyLane",
+      "line": "The same circuits on every build of PennyLane, Lightning and Catalyst, each change traced to its pull request.",
+      "fact": "Import grew 74% in 0.43; traced to one line.",
+      "picture": "pennywatch.webp",
+      "fit": "meet"
+    },
+    {
+      "id": "llm-honeypot",
+      "url": "https://github.com/amirradjou/llm-honeypot",
+      "repo": "amirradjou/llm-honeypot",
+      "kind": "SSH honeypot",
+      "line": "Lets any bot log in, answers with a convincing fake Ubuntu shell, and records everything it tries.",
+      "fact": "59 of 65 unseen bot lines answered like Ubuntu 22.04.",
+      "picture": "llm-honeypot.webp"
+    },
+    {
+      "id": "exitcheck",
+      "url": "https://github.com/amirradjou/exitcheck",
+      "repo": "amirradjou/exitcheck",
+      "kind": "Token scam checks",
+      "line": "Reads Ethereum and Base token contracts and simulates a buy and a sell on a fork of the chain.",
+      "fact": "6 of 6 honeypot tokens flagged, 0 of 10 legitimate.",
+      "picture": "exitcheck.webp"
+    },
+    {
+      "id": "poker-table",
+      "url": "https://github.com/amirradjou/poker-table",
+      "repo": "amirradjou/poker-table",
+      "live": "https://amirradjou.github.io/poker-table/",
+      "kind": "No-limit hold'em for LLMs",
+      "line": "Language models, scripted bots and you at one table, with replays, leagues and coaching.",
+      "fact": "Two model personalities, 100 hands: nobody clears break-even.",
+      "picture": "poker-table.webp"
+    },
+    {
+      "id": "overhead",
+      "url": "https://github.com/amirradjou/overhead",
+      "repo": "amirradjou/overhead",
+      "live": "https://overhead-window.netlify.app",
+      "kind": "Planes outside your window",
+      "line": "The planes you can see from your window, drawn where you would see them, from free flight-tracking feeds.",
+      "picture": "overhead.webp"
+    },
+    {
+      "id": "chess-coach",
+      "url": "https://github.com/amirradjou/chess-coach",
+      "repo": "amirradjou/chess-coach",
+      "kind": "Chess training from your games",
+      "line": "Stockfish finds the mistakes you keep making, and the coach drills you on those exact positions.",
+      "picture": "chess-coach.webp"
+    }
+  ],
+  "sites": [
+    {
+      "name": "amirradjou.com",
+      "url": "https://amirradjou.com/"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+# Pinned so the outlined text never shifts between runs. Used as:
+#   uv run --with-requirements tools/requirements.txt python tools/<script>.py
+fonttools==4.69.1
+brotli==1.2.1
+uharfbuzz==0.57.0

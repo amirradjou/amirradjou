@@ -1,0 +1,1 @@
+# GitHub logins that are never added to the banner, one per line (case does not matter).

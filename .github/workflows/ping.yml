@@ -1,0 +1,41 @@
+# Someone opened an issue. If it is titled "ping" (or "unping"), tools/join.py adds (or removes) them
+# as a peer in the banner and writes a reply; this workflow commits the new banner, replies and closes
+# the issue. Issue text never reaches a shell: the script reads the event file and validates the login.
+name: ping
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  ping:
+    if: github.event.issue.pull_request == null
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - uses: astral-sh/setup-uv@v10.4.0
+
+      - name: Add the peer, rebuild the banner and commit
+        id: join
+        env:
+          COMMENT_FILE: ${{ runner.temp }}/comment.md
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: bash tools/ci/join-and-commit.sh
+
+      - name: Reply and close the issue
+        if: steps.join.outputs.action != 'ignore'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ github.event.issue.number }}
+          COMMENT_FILE: ${{ runner.temp }}/comment.md
+        run: |
+          gh issue comment "$NUMBER" --repo "$GITHUB_REPOSITORY" --body-file "$COMMENT_FILE"
+          gh issue close "$NUMBER" --repo "$GITHUB_REPOSITORY" --reason completed
